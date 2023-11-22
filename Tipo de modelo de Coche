@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": " class Coche:\n     def __init__(self, marca, modelo):\n            self.marca = marca\n            self.modelo = modelo\n            self.arranque = False",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 7,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "     def arrancar(self):\n            self.arrancado = True\n            print(\"El\", self.marca, self.modelo, \" se ha arrancado\")",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 13,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "     def parar(self):\n            self.arrancado = False\n            print(\"El\", self.marca , self.modelo, \" se ha parado\")\n        ",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 42,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "            laguna = Coche(\"Renault\", \"Laguna\")\n            tesla = Coche(\"Tesla\" , \"Model 3\")\n",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 30,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "           print(type(laguna))\n           print(type(tesla))\n\n\n\n\n",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "<class '__main__.Coche'>\n<class '__main__.Coche'>\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "            print(laguna.marca, laguna.modelo)\n            print(tesla.marca , tesla.modelo)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "Renault Laguna\nTesla Model 3\n",
+          "output_type": "stream"
+        }
+      ]
+    }
+  ]
+}
